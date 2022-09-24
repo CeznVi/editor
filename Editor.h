@@ -150,9 +150,9 @@ namespace EDIT
 			{
 				system("cls");
 				int c = Menu::select_vertical({ "Файлове меню",
-												"Шрифт",
-												"Абзац",
-												"Таблиця",
+												"Палітра кольорів",
+												"Панель інструментів",
+												"Панель текстова",
 												"Зображення",
 												"Вихід" },
 					HorizontalAlignment::Center, 5);

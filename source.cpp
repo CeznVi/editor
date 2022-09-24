@@ -21,7 +21,7 @@ void menu()
 {
 	using namespace EDIT;
 	using namespace MENU;
-
+		
 	RunEditor* program = nullptr;
 
 	while (true)
@@ -41,7 +41,13 @@ void menu()
 			edt->menu();
 			break;
 		}
-		//case 1: printAllwords(); break;
+		case 1:
+		{
+			program = new RunImageEditor;
+			Editor* edt = program->open();
+			edt->menu();
+			break;
+		}
 		case 2: exit(0);
 		default:
 			break;
